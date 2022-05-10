@@ -106,14 +106,19 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    border: Border.all(),
+                InkWell(
+                  onTap: (){
+                    Navigator.of(context).popAndPushNamed("/home");
+                  },
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      border: Border.all(),
+                    ),
+                    child: const Text("SKIP"),
                   ),
-                  child: const Text("SKIP"),
                 ),
                 const SizedBox(
                   height: 20,

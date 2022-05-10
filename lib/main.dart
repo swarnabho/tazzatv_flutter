@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tazzatv/Screens/HomeScreen.dart';
 import 'package:tazzatv/Screens/LoginScreen.dart';
 import 'package:tazzatv/Screens/SplashScreen.dart';
 
@@ -8,6 +9,8 @@ void main() {
 
 class TazzaTv extends StatelessWidget {
   const TazzaTv({Key? key}) : super(key: key);
+
+
 
   // This widget is the root of your application.
   @override
@@ -21,6 +24,7 @@ class TazzaTv extends StatelessWidget {
       home: const SplashScreen(),
       routes: {
         "/login": (context) =>  const LoginScreen(),
+        "/home": (context) =>  const HomeScreen(),
       },
     );
   }
